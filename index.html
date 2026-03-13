@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FusionStore | Demo eCommerce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">Fusion<span>Store</span></a>
+            
+            <!-- Navegación para escritorio -->
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#" class="nav-link active">Inicio</a></li>
+                    <li><a href="#" class="nav-link">Tienda</a></li>
+                    <li><a href="#" class="nav-link">Novedades</a></li>
+                    <li><a href="#" class="nav-link">Ofertas</a></li>
+                    <li><a href="#" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <!-- Iconos de usuario y carrito -->
+            <div class="header-icons">
+                <a href="#" class="icon-link"><i class="fas fa-search"></i></a>
+                <a href="#" class="icon-link"><i class="fas fa-user"></i></a>
+                <a href="#" class="icon-link cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </a>
+                <!-- Botón menú hamburguesa (móvil) -->
+                <button class="hamburger" id="hamburgerBtn" aria-label="Menú">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero-content">
+                <h1 class="hero-title">Tecnología y estilo <span>en un solo lugar</span></h1>
+                <p class="hero-description">Descubre los productos más innovadores con diseños exclusivos y precios increíbles.</p>
+                <a href="#" class="btn btn-primary">Comprar ahora <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </section>
+
+        <!-- Productos Destacados -->
+        <section class="products">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Productos destacados</h2>
+                    <p class="section-subtitle">Los más vendidos de la semana</p>
+                </div>
+                <div class="products-grid" id="productsGrid">
+                    <!-- Los productos se inyectarán dinámicamente con JS -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-col">
+                <h3 class="footer-title">FusionStore</h3>
+                <p>Tu tienda de tecnología y accesorios con la mejor experiencia de compra.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Enlaces rápidos</h4>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Tienda</a></li>
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Atención al cliente</h4>
+                <ul>
+                    <li><a href="#">Preguntas frecuentes</a></li>
+                    <li><a href="#">Envíos y devoluciones</a></li>
+                    <li><a href="#">Política de privacidad</a></li>
+                    <li><a href="#">Términos de servicio</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Newsletter</h4>
+                <p>Suscríbete para recibir ofertas exclusivas</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Tu email" required>
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 FusionStore. Todos los derechos reservados. | Hecho por Marvin Ramirez | Demo para portafolio</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
